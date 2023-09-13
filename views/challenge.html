@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survival Trial</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="challenge.css">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
+        <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
+    </head>
+    <body>
+        <header class="header">
+            <a href="/" class="header__title">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+            <div class="header__right-content">
+                <p id="challengeInfo" class="header__info">Points | Nickname</p>
+                <img src="/images/persona.png" class="header__userLogo"></img>
+            </div>
+        </header>               
+        <main class="main-content">
+            <div class="challengeScreenContainer">
+                <div class="challengeScreenContainer__descriptionContainer">
+                    <p id="challengeDescription" class="challengeScreenContainer__description">Un apasionante viaje de aventura nos espera. ¿En cuál escenario deseas adentrarte? </p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/desert.jpg"></img>
+                            <button id="desertButton" class="option__button option__button--text">Desierto</button>
+                        </div>
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/sea.jpg"></img>
+                            <button id="seaButton" class="option__button option__button--text">Mar</button>
+                        </div>
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/jungle.jpg"></img>
+                            <button id="jungleButton" class="option__button option__button--text">Selva</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+            <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
+            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+        </footer>
+        <script src="firstScreen.js"></script>
+    </body>
+</html>

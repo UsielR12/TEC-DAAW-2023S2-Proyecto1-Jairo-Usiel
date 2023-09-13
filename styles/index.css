@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #3EC289, #176F48);
+}
+
+.mainScreenContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainScreenContainer__logo {
+    object-fit: cover;
+    width: 800px;
+    height: 300px;
+}
+
+.mainScreenContainer__nicknameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nicknameContainer__title {
+    font-family: 'Londrina Solid';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.nicknameContainer__textbox {
+    width: 399px;
+    height: 66px;
+    background: #D9D9D9BF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 16px;
+}
+
+.nicknameContainer__textbox--text {
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.mainScreenContainer__startButton {
+    width: 399px;
+    height: 66px;
+    background: #D9D9D9BF;
+    border-radius: 16px;
+}
+
+.mainScreenContainer__startButton--text {
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.footer {
+    width: 100vw;
+    height: 56px;
+    display: flex;
+    background: #0A3F28;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__authorRights {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Londrina Solid';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
+.footer__leafImage {
+    max-width: 30px;
+    height: 40px;
+    margin: 0 10px;
+}
