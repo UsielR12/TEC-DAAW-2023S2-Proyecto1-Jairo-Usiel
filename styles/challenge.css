@@ -9,9 +9,9 @@
 
 .header__logo {
     object-fit: cover;
-    max-height: 60px;
+    max-height: 80px;
     width: auto;
-    margin-left: 12.5%;
+    margin: 0 auto;
 }
 
 .header__title {
@@ -102,8 +102,16 @@
 }
 
 .option__button {
-    width: auto;
+    width: 289px;
     height: 40px;
+    background: #D9D9D9;
+    border-radius: 16px;
+    border: none;
+}
+
+.option__button__step4 {
+    width: auto;
+    height: auto;
     background: #D9D9D9;
     border-radius: 16px;
     border: none;
@@ -117,3 +125,8 @@
     letter-spacing: 0em;
     text-align: center;
 }
+
+
+
+
+
