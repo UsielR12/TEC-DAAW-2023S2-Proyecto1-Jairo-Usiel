@@ -13,14 +13,20 @@ function onLoadDocument() {
 }
 
 function handleFish1Option() {
+    const newPoints = parseInt(points) - 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handleFish2Option() {
+    const newPoints = parseInt(points) + 50
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handleFish3Option() {
+    const newPoints = parseInt(points) + 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 

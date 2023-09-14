@@ -11,10 +11,14 @@ function onLoadDocument() {
 }
 
 function handleWalkOption() {
+    const newPoints = parseInt(points) - 5
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step4'
 }
 
 function handleCJumpStonesOption() {
+    const newPoints = parseInt(points) + 30
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step4'
 }
 

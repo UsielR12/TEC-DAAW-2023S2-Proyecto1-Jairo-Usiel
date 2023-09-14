@@ -11,10 +11,14 @@ function onLoadDocument() {
 }
 
 function handleCreepOption() {
+    const newPoints = parseInt(points) + 30
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step4'
 }
 
 function handleCutOption() {
+    const newPoints = parseInt(points) - 5
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step4'
 }
 

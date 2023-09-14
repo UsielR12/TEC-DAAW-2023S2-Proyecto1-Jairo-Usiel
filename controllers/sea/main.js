@@ -12,14 +12,20 @@ function onLoadDocument() {
 }
 
 function handleSwimOption() {
+    const newPoints = parseInt(points) + 20
+    localStorage.setItem('points', newPoints)
     window.location.href = '/sea-step1'
 }
 
 function handleCatchOption() {
+    const newPoints = parseInt(points) - 10
+    localStorage.setItem('points', newPoints)
     window.location.href = '/sea-step1'
 }
 
 function handleSubmarineOption() {
+    const newPoints = parseInt(points) + 50
+    localStorage.setItem('points', newPoints)
     window.location.href = '/sea-step1'
 }
 

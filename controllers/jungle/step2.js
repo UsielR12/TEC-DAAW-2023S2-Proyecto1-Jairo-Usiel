@@ -11,10 +11,14 @@ function onLoadDocument() {
 }
 
 function handleFightOption() {
+    const newPoints = parseInt(points) - 5
+    localStorage.setItem('points', newPoints)
     window.location.href = '/jungle-step4'
 }
 
 function handleEvangelizeOption() {
+    const newPoints = parseInt(points) + 30
+    localStorage.setItem('points', newPoints)
     window.location.href = '/jungle-step4'
 }
 

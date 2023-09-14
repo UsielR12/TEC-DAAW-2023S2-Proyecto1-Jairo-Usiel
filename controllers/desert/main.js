@@ -12,14 +12,20 @@ function onLoadDocument() {
 }
 
 function handleKnifeOption() {
+    const newPoints = parseInt(points) + 50
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step1'
 }
 
 function handleStickOption() {
+    const newPoints = parseInt(points) + 20
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step1'
 }
 
 function handleJumpOption() {
+    const newPoints = parseInt(points) - 10
+    localStorage.setItem('points', newPoints)
     window.location.href = '/desert-step1'
 }
 

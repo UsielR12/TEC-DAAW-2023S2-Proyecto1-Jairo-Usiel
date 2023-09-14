@@ -12,14 +12,20 @@ function onLoadDocument() {
 }
 
 function handleOption1Option() {
+    const newPoints = parseInt(points) + 50
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handleOption2Option() {
+    const newPoints = parseInt(points) + 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handleOption3Option() {
+    const newPoints = parseInt(points) - 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 

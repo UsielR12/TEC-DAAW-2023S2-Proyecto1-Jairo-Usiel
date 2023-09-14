@@ -12,14 +12,20 @@ function onLoadDocument() {
 }
 
 function handleWaterOption() {
+    const newPoints = parseInt(points) + 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handleCocacolaOption() {
+    const newPoints = parseInt(points) + 50
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 
 function handlePoisonOption() {
+    const newPoints = parseInt(points) - 100
+    localStorage.setItem('points', newPoints)
     window.location.href = '/finishAdventure'
 }
 

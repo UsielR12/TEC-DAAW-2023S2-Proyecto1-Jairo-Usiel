@@ -11,10 +11,14 @@ function onLoadDocument() {
 }
 
 function handleSurroundOption() {
+    const newPoints = parseInt(points) - 5
+    localStorage.setItem('points', newPoints)
     window.location.href = '/sea-step3'
 }
 
 function handleReturnOption() {
+    const newPoints = parseInt(points) + 30
+    localStorage.setItem('points', newPoints)
     window.location.href = '/sea-step3'
 }
 
