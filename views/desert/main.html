@@ -14,18 +14,34 @@
             <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
             <div class="header__right-content">
                 <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo"></img>
+                <img src="/images/persona.png" class="header__userLogo">
             </div>
         </header>               
         <main class="main-content">
             <div class="challengeScreenContainer">
-                <h1>Desert Screen</h1>
+                <div class="challengeScreenContainer__descriptionContainer">
+                    <p id="challengeDescription" class="challengeScreenContainer__description">En el vasto y peligroso desierto, te encuentras rodeado por una horda de criaturas hostiles. Sabes que necesitas protegerte, ¿qué herramienta deseas utilizar para enfrentarte a ellas y abrirte paso a través del desierto? </p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/desert/machete.jpg"></img>
+                            <button id="knifeButton" class="option__button option__button--text">Cuchillo</button>
+                        </div>
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/desert/baston.jpg"></img>
+                            <button id="stickButton" class="option__button option__button--text">Bastón</button>
+                        </div>
+                        <div class="optionsContainer__option">
+                            <img class="option__image" src="/images/scenarios/desert/saltar.jpg"></img>
+                            <button id="jumpButton" class="option__button option__button--text">Saltar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+            <img class="footer__leafImage" src="/images/hoja1.png">
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+            <img class="footer__leafImage" src="/images/hoja1.png">
         </footer>
         <script src="/desert/main.js"></script>
     </body>
