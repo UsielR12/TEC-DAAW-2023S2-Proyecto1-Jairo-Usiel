@@ -6,13 +6,26 @@ const challengeInfo = document.getElementById("challengeInfo")
 const desertButton = document.getElementById('desertButton')
 const seaButton = document.getElementById('seaButton')
 const jungleButton = document.getElementById('jungleButton')
+const modal_container = document.getElementById('modal_container')
+const close = document.getElementById('close')
+
+desertButton.addEventListener('click', () => {
+    modal_container.classList.add('show')
+});
+
+close.addEventListener('click', () => {
+    modal_container.classList.remove('show')
+    window.location.href = '/desert'
+});
+
+
 
 function onLoadDocument() {
     challengeInfo.innerHTML = info
 }
 
 function handleDesertOption() {
-    window.location.href = '/desert'
+    modal_container.classList.add('show')
 }
 
 function handleSeaOption() {

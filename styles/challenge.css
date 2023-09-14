@@ -48,6 +48,7 @@
     align-items: center;
     gap: 30px;
     height: 100%;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .challengeScreenContainer__descriptionContainer {
@@ -125,6 +126,75 @@
     letter-spacing: 0em;
     text-align: center;
 }
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal {
+    background-color: rgb(172, 172, 172);
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.title_notificacion{
+    font-family: 'Londrina Solid';
+    font-size: 50px;
+    margin: 0;
+    color: #176F48;
+}
+
+.body_notification{
+    font-family: 'Londrina Solid';
+    font-size:  30px;
+    color: black;
+}
+
+.win_points_notification{
+    font-family: 'Londrina Solid';
+    font-size:  45px;
+    color: #3EC289;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.lose_points_notification{
+    font-family: 'Londrina Solid';
+    font-size:  45px;
+    color: #ff3030;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 
 
