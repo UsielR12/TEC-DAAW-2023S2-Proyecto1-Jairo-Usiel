@@ -30,6 +30,18 @@ router.get('/sea', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'sea', 'main.html'))
 })
 
+router.get('/sea-step1', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'sea', 'step1.html'))
+})
+
+router.get('/sea-step2', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'sea', 'step2.html'))
+})
+
+router.get('/sea-step3', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'sea', 'step3.html'))
+})
+
 router.get('/jungle', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'jungle', 'main.html'))
 })
