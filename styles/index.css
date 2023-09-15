@@ -101,6 +101,13 @@ body, html {
     margin: 0 10px;
 }
 
+.footer__leafImage1 {
+    max-width: 30px;
+    height: 40px;
+    margin: 0 10px;
+    transform: scaleX(-1);
+}
+
 
 
 @keyframes fadeIn {
