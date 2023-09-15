@@ -4,6 +4,7 @@
         <title>Survival Trial</title>
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="challenge.css">
+        <link rel="stylesheet" type="text/css" href="finishGame.css">
         <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
         <link rel="icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
@@ -19,8 +20,15 @@
         </header>               
         <main class="main-content">
             <div class="mainScreenContainer">
-                <div class="challengeScreenContainer__descriptionContainer">
-                    <img width="572px" height="749px" src="/images/FinishGame.jpg"></img>
+                <div class="challengeScreenContainer">
+                    <div class="challengeScreenContainer__descriptionContainer">
+                        <p id="endOfGameMessage" class="challengeScreenContainer__description">
+                        </p>
+                        <p class="challengeScreenContainer__description finaLScoreText">
+                            Tus puntos finales son: <span id="finalScore"></span>
+                        </p>
+                        <img id="endOfGameImage" class="finishGameImg"></img>
+                    </div>
                 </div>
             </div>
         </main>

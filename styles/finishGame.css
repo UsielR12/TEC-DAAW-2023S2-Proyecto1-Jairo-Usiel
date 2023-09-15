@@ -1,0 +1,9 @@
+.finishGameImg {
+    object-fit: scale-down;
+    width: 800px;
+    height: 400px;
+}
+
+.finaLScoreText {
+    font-size: 30px !important;
+}

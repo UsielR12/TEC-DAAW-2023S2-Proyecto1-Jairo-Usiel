@@ -26,13 +26,17 @@ function onLoadDocument() {
 
 function handleDesertOption() {
     modal_container.classList.add('show')
+    localStorage.setItem('scenario', 'desert')
+    window.location.href = '/desert'
 }
 
 function handleSeaOption() {
+    localStorage.setItem('scenario', 'sea')
     window.location.href = '/sea'
 }
 
 function handleJungleOption() {
+    localStorage.setItem('scenario', 'jungle')
     window.location.href = '/jungle'
 }
 
