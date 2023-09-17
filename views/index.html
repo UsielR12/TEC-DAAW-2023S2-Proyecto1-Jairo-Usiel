@@ -9,22 +9,22 @@
     </head>
     <body>
         <main class="main-content">
-            <div class="mainScreenContainer">
-                <img class="mainScreenContainer__logo" src="/images/Logo.png"></img>
+            <div class="mainScreenContainer" role="main">
+                <img class="mainScreenContainer__logo" src="/images/Logo.png" alt="Logo de la aplicación" aria-label="Logo de la aplicación"></img>
                 <div class="mainScreenContainer__nicknameContainer">
                     <h3 class="nicknameContainer__title">Nickname:</h3>
-                    <input id="nicknameTextbox" class="nicknameContainer__textbox nicknameContainer__textbox--text" placeholder="Write here..."></input>
+                    <input id="nicknameTextbox" class="nicknameContainer__textbox nicknameContainer__textbox--text" placeholder="Write here..." aria-label="Introducir un apodo" aria-required="true" aria-describedby="nicknameTextboxError"></input>
+                    <div id="nicknameTextboxError" class="error-message" role="alert" aria-live="assertive"></div>
                 </div>
-                <button id="startButton" class="mainScreenContainer__startButton mainScreenContainer__startButton--text">Start</button>
-                <button id="instructionButton" class="mainScreenContainer__startButton mainScreenContainer__startButton--text">Instrucciones</button>
+                <button id="startButton" class="mainScreenContainer__startButton mainScreenContainer__startButton--text" aria-label="Iniciar el juego">Start</button>
+                <button id="instructionButton" class="mainScreenContainer__startButton mainScreenContainer__startButton--text" aria-label="Abrir las instrucciones del juego">Instrucciones</button>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png"></img>
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja"></img>
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja"></img>
         </footer>
         <script src="main.js"></script>
-        
     </body>
 </html>

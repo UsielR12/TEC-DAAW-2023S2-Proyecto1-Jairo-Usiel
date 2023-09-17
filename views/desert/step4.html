@@ -9,63 +9,63 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo">
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
-            <div id="waterOption" class="modal-container">
+        <main class="main-content" role="main">
+            <div id="waterOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">¡Buena suerte! escogiste la opción que es agua:</p>
-                    <p class="win_points_notification">Gana +100pts</p>
-                    <button id="closeWater" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +100pts</p>
+                    <button id="closeWater" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="cocacolaOption" class="modal-container">
+            <div id="cocacolaOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">¡Buena suerte! escogiste la opción que es CocaCola:</p>
-                    <p class="win_points_notification">Gana +50pts</p>
-                    <button id="closeCocacola" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +50pts</p>
+                    <button id="closeCocacola" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="poisonOption" class="modal-container">
+            <div id="poisonOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">¡Mala Suerte! escogiste la opción que es veneno:</p>
-                    <p class="lose_points_notification">Pierde -100pts</p>
-                    <button id="closePoison" class="option__button option__button--text">Aceptar</button>
+                    <p class="lose_points_notification" aria-live="polite">Pierde -100pts</p>
+                    <button id="closePoison" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">Después de todos los desafios en el desierto, te encuentras con muchas sed, y debes escoger entre tres opciones, verde, azul y rojo, donde cada opción puede ser algo bueno o algo mano, queda en tu suerte</p>
-                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/vasoVerde.jpg"></img>
-                            <button id="waterButton" class="option__button option__button--text">Verde</button>
+                    <p id="challengeDescription" class="challengeScreenContainer__description" aria-live="polite">Después de todos los desafios en el desierto, te encuentras con muchas sed, y debes escoger entre tres opciones, verde, azul y rojo, donde cada opción puede ser algo bueno o algo malo, queda en tu suerte</p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer" role="menu">
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/vasoVerde.jpg" alt="Imagen de vaso verde" aria-label="Imagen de vaso verde">
+                            <button id="waterButton" class="option__button option__button--text" aria-label="Seleccionar agua como opción">Verde</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/vasoAzul.jpg"></img>
-                            <button id="cocacolaButton" class="option__button option__button--text">Azul</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/vasoAzul.jpg" alt="Imagen de vaso azul" aria-label="Imagen de vaso azul">
+                            <button id="cocacolaButton" class="option__button option__button--text" aria-label="Seleccionar CocaCola como opción">Azul</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/vasoRojo.jpg"></img>
-                            <button id="poisonButton" class="option__button option__button--text">Rojo</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/vasoRojo.jpg" alt="Imagen de vaso rojo" aria-label="Imagen de vaso rojo">
+                            <button id="poisonButton" class="option__button option__button--text" aria-label="Seleccionar veneno como opción">Rojo</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png">
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png">
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/desert/step4.js"></script>
     </body>

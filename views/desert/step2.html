@@ -9,51 +9,51 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo">
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
-            <div id="walkOption" class="modal-container">
+        <main class="main-content" role="main">
+            <div id="walkOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la opción de caminar por la orilla, es muy probable que se caiga en la arena movediza:</p>
-                    <p class="lose_points_notification">Pierde -5pts</p>
-                    <button id="closeWalk" class="option__button option__button--text">Aceptar</button>
+                    <p class="lose_points_notification" aria-live="polite">Pierde -5pts</p>
+                    <button id="closeWalk" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="jumpStonesOption" class="modal-container">
+            <div id="jumpStonesOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión de saltar por las rocas, lo cuál es la mejor opción para pasar la arena movediza:</p>
-                    <p class="win_points_notification">Gana +30pts</p>
-                    <button id="closeJumpStones" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +30pts</p>
+                    <button id="closeJumpStones" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">Decides aventurarte a través de la arena movediza, un terreno traicionero que parece tragar todo lo que toca. Mientras avanzas con cuidado, notas algunas piedras salpicadas en el camino, formando un camino irregular a través de la peligrosa área central. También puedes optar por caminar por la orilla de la arena movediza, donde parece ser más firme pero menos directo. ¿Prefieres saltar de piedra en piedra o caminar por la orilla?</p>
-                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/caminarOrilla.jpg"></img>
-                            <button id="walkButton" class="option__button option__button--text">Caminar por la orilla</button>
+                    <p id="challengeDescription" class="challengeScreenContainer__description" aria-live="polite">Decides aventurarte a través de la arena movediza, un terreno traicionero que parece tragar todo lo que toca. Mientras avanzas con cuidado, notas algunas piedras salpicadas en el camino, formando un camino irregular a través de la peligrosa área central. También puedes optar por caminar por la orilla de la arena movediza, donde parece ser más firme pero menos directo. ¿Prefieres saltar de piedra en piedra o caminar por la orilla?</p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer" role="menu">
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/caminarOrilla.jpg" alt="Imagen del desierto" aria-label="Imagen del desierto">
+                            <button id="walkButton" class="option__button option__button--text" aria-label="Seleccionar caminar por la orilla como opción">Caminar por la orilla</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/saltarRocas.jpg"></img>
-                            <button id="jumpStonesButton" class="option__button option__button--text">Saltar por las rocas</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/saltarRocas.jpg" alt="Imagen de saltar por las rocas" aria-label="Imagen de saltar por las rocas">
+                            <button id="jumpStonesButton" class="option__button option__button--text" aria-label="Seleccionar saltar por las rocas como opción">Saltar por las rocas</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png">
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png">
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/desert/step2.js"></script>
     </body>

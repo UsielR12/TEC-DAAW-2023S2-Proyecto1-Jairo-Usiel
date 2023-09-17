@@ -9,37 +9,37 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo"></img>
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
-            <div id="swimOption" class="modal-container">
+        <main class="main-content" role="main">
+            <div id="swimOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido una buena decisión, pero no la mejor, nadar y huir:</p>
                     <p class="win_points_notification">Gana +20pts</p>
-                    <button id="closeSwim" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeSwim" class="option__button option__button--text" aria-label="Aceptar resultado de la opción 'Nadar y huir'">Aceptar</button>
                 </div>
             </div>
-            <div id="catchOption" class="modal-container">
+            <div id="catchOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión más mala, atrapar medusas no debe ser muy seguro:</p>
                     <p class="lose_points_notification">Pierde -10pts</p>
-                    <button id="closeCatch" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeCatch" class="option__button option__button--text" aria-label="Aceptar resultado de la opción 'Atrapar'">Aceptar</button>
                 </div>
             </div>
-            <div id="submarineOption" class="modal-container">
+            <div id="submarineOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
-                    <p class="body_notification">Usted ha escogido la decisión correcta, irse en submarino es lo mejor para no enfrentar a las medusa:</p>
+                    <p class="body_notification">Usted ha escogido la decisión correcta, irse en submarino es lo mejor para no enfrentar a las medusas:</p>
                     <p class="win_points_notification">Gana +50pts</p>
-                    <button id="closeSubmarine" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeSubmarine" class="option__button option__button--text" aria-label="Aceptar resultado de la opción 'Irse en submarino'">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
@@ -47,25 +47,25 @@
                     <p id="challengeDescription" class="challengeScreenContainer__description"> Te encuentras en alta mar, tu tranquilidad se ve amenazada cuando te das cuenta de que estás rodeado de medusas, criaturas marinas notoriamente peligrosas. En este momento crucial, te encuentras en una encrucijada y debes tomar una decisión importante para tu supervivencia.</p>
                     <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/nadar.jpg"></img>
-                            <button id="swimButton" class="option__button option__button--text">Nadar y huir</button>
+                            <img class="option__image" src="/images/scenarios/sea/nadar.jpg" alt="Imagen de la opción 'Nadar y huir'" aria-label="Imagen de la opción 'Nadar y huir'">
+                            <button id="swimButton" class="option__button option__button--text" aria-label="Seleccionar la opción 'Nadar y huir'">Nadar y huir</button>
                         </div>
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/atrapar.jpg"></img>
-                            <button id="catchButton" class="option__button option__button--text">Atrapar</button>
+                            <img class="option__image" src="/images/scenarios/sea/atrapar.jpg" alt="Imagen de la opción 'Atrapar'" aria-label="Imagen de la opción 'Atrapar'">
+                            <button id="catchButton" class="option__button option__button--text" aria-label="Seleccionar la opción 'Atrapar'">Atrapar</button>
                         </div>
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/submarino.jpg"></img>
-                            <button id="submarineButton" class="option__button option__button--text">Irse en submarino</button>
+                            <img class="option__image" src="/images/scenarios/sea/submarino.jpg" alt="Imagen de la opción 'Irse en submarino'" aria-label="Imagen de la opción 'Irse en submarino'">
+                            <button id="submarineButton" class="option__button option__button--text" aria-label="Seleccionar la opción 'Irse en submarino'">Irse en submarino</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png"></img>
-            <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
+            <text class="footer__authorRights" aria-live="polite">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/sea/main.js"></script>
     </body>

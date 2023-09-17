@@ -9,21 +9,21 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo"></img>
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
+        <main class="main-content" role="main">
             <div id="surroundOption" class="modal-container">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido una mala decisión, rodear tiburones con velocidad no creo que sea la opción:</p>
                     <p class="lose_points_notification">Pierde -5pts</p>
-                    <button id="closeSurround" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeSurround" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div id="returnOption" class="modal-container">
@@ -31,29 +31,29 @@
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión correcta, devolverse y no intentar atravesar por donde están los tiburones:</p>
                     <p class="win_points_notification">Gana +30pts</p>
-                    <button id="closeReturn" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeReturn" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">Una vez superados los piratas, te encuentras con otro desafío en el mar: un grupo de tiburones que se acerca sigilosamente. Tienes dos opciones rodearlos con velocidad o devolverse</p>
+                    <p id="challengeDescription" class="challengeScreenContainer__description">Una vez superados los piratas, te encuentras con otro desafío en el mar: un grupo de tiburones que se acerca sigilosamente. Tienes dos opciones, rodearlos con velocidad o devolverse.</p>
                     <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/rodearlo.jpg"></img>
-                            <button id="surroundButton" class="option__button option__button--text">Rodearlos con velocidad</button>
+                            <img class="option__image" src="/images/scenarios/sea/rodearlo.jpg" alt="Imagen de la opción 'Rodearlos con velocidad'" aria-label="Imagen de la opción 'Rodearlos con velocidad'">
+                            <button id="surroundButton" class="option__button option__button--text" aria-label="Seleccionar la opción 'Rodearlos con velocidad'">Rodearlos con velocidad</button>
                         </div>
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/devolverse.jpg"></img>
-                            <button id="returnButton" class="option__button option__button--text">Devolverse</button>
+                            <img class="option__image" src="/images/scenarios/sea/devolverse.jpg" alt="Imagen de la opción 'Devolverse'" aria-label="Imagen de la opción 'Devolverse'">
+                            <button id="returnButton" class="option__button option__button--text" aria-label="Seleccionar la opción 'Devolverse'">Devolverse</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png"></img>
-            <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
+            <text class="footer__authorRights" aria-live="polite">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/sea/step2.js"></script>
     </body>

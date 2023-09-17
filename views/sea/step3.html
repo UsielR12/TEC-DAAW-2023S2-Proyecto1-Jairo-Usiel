@@ -9,21 +9,21 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo"></img>
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
+        <main class="main-content" role="main">
             <div id="fish1Option" class="modal-container">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
-                    <p class="body_notification">Usted ha escogido una mala decisión, comerse un pez venenoso como el pez globo no es tan buena idea:
+                    <p class="body_notification">Usted ha escogido una mala decisión, comerse un pez venenoso como el pez globo no es tan buena idea:</p>
                     <p class="lose_points_notification">Pierde -100pts</p>
-                    <button id="closeFish1" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeFish1" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div id="fish2Option" class="modal-container">
@@ -31,7 +31,7 @@
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido una buena decisión, pero no la mejor, comerse el pez espada:</p>
                     <p class="win_points_notification">Gana +50pts</p>
-                    <button id="closeFish2" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeFish2" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div id="fish3Option" class="modal-container">
@@ -39,33 +39,33 @@
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión correcta, comerse un pez payaso es lo mejor:</p>
                     <p class="win_points_notification">Gana +100pts</p>
-                    <button id="closeFish3" class="option__button option__button--text">Aceptar</button>
+                    <button id="closeFish3" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">Después de superar los desafíos en el mar, te encuentras frente a una última decisión para terminar tu aventura. Tienes tres opciones de peces para comer que son pez globo, pez espada y pez payaso</p>
+                    <p id="challengeDescription" class="challengeScreenContainer__description">Después de superar los desafíos en el mar, te encuentras frente a una última decisión para terminar tu aventura. Tienes tres opciones de peces para comer: pez globo, pez espada y pez payaso.</p>
                     <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/pezGlobo.jpg"></img>
-                            <button id="fish1Button" class="option__button option__button--text">Pez globo</button>
+                            <img class="option__image" src="/images/scenarios/sea/pezGlobo.jpg" alt="Imagen del pez globo" aria-label="Imagen del pez globo">
+                            <button id="fish1Button" class="option__button option__button--text" aria-label="Seleccionar el pez globo">Pez globo</button>
                         </div>
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/pezEspada.jpg"></img>
-                            <button id="fish2Button" class="option__button option__button--text">Pez espada</button>
+                            <img class="option__image" src="/images/scenarios/sea/pezEspada.jpg" alt="Imagen del pez espada" aria-label="Imagen del pez espada">
+                            <button id="fish2Button" class="option__button option__button--text" aria-label="Seleccionar el pez espada">Pez espada</button>
                         </div>
                         <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/sea/pezPayaso.jpg"></img>
-                            <button id="fish3Button" class="option__button option__button--text">Pez payaso</button>
+                            <img class="option__image" src="/images/scenarios/sea/pezPayaso.jpg" alt="Imagen del pez payaso" aria-label="Imagen del pez payaso">
+                            <button id="fish3Button" class="option__button option__button--text" aria-label="Seleccionar el pez payaso">Pez payaso</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png"></img>
-            <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
+            <text class="footer__authorRights" aria-live="polite">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/sea/step3.js"></script>
     </body>

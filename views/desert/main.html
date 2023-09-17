@@ -9,63 +9,63 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo">
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
-            <div id="knifeOption" class="modal-container">
+        <main class="main-content" role="main">
+            <div id="knifeOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la mejor decisión, enfrentarse a las viboras con un cuchillo:</p>
-                    <p class="win_points_notification">Gana +50pts</p>
-                    <button id="closeKnife" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +50pts</p>
+                    <button id="closeKnife" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="stickOption" class="modal-container">
+            <div id="stickOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión que genera dudas, enfrentarse a las viboras con un bastón:</p>
-                    <p class="win_points_notification">Gana +20pts</p>
-                    <button id="closeStick" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +20pts</p>
+                    <button id="closeStick" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="jumpOption" class="modal-container">
+            <div id="jumpOption" class="modal-container" role="dialog">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión más mala, enfrentarse a las viboras saltando no es la mejor opción:</p>
-                    <p class="lose_points_notification">Pierde -10pts</p>
-                    <button id="closeJump" class="option__button option__button--text">Aceptar</button>
+                    <p class="lose_points_notification" aria-live="polite">Pierde -10pts</p>
+                    <button id="closeJump" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">En el vasto y peligroso desierto, te encuentras rodeado por una horda de viboras. Sabes que necesitas protegerte, ¿qué herramienta deseas utilizar para enfrentarte a ellas y abrirte paso a través del desierto? </p>
-                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/cuchilloDesierto.jpg"></img>
-                            <button id="knifeButton" class="option__button option__button--text">Cuchillo</button>
+                    <p id="challengeDescription" class="challengeScreenContainer__description" aria-live="polite">En el vasto y peligroso desierto, te encuentras rodeado por una horda de viboras. Sabes que necesitas protegerte, ¿qué herramienta deseas utilizar para enfrentarte a ellas y abrirte paso a través del desierto?</p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer" role="menu">
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/cuchilloDesierto.jpg" alt="Imagen del desierto" aria-label="Imagen del desierto">
+                            <button id="knifeButton" class="option__button option__button--text" aria-label="Seleccionar el cuchillo como opción">Cuchillo</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/bastonDesierto.jpg"></img>
-                            <button id="stickButton" class="option__button option__button--text">Bastón</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/bastonDesierto.jpg" alt="Imagen del mar" aria-label="Imagen del mar">
+                            <button id="stickButton" class="option__button option__button--text" aria-label="Seleccionar el bastón como opción">Bastón</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/saltarDesierto.jpg"></img>
-                            <button id="jumpButton" class="option__button option__button--text">Saltar</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/saltarDesierto.jpg" alt="Imagen de la selva" aria-label="Imagen de la selva">
+                            <button id="jumpButton" class="option__button option__button--text" aria-label="Seleccionar saltar como opción">Saltar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png">
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png">
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/desert/main.js"></script>
     </body>

@@ -9,51 +9,51 @@
         <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
     </head>
     <body>
-        <header class="header">
-            <a href="/" class="header__title">Inicio</a>
-            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        <header class="header" role="banner">
+            <a href="/" class="header__title" aria-label="Enlace a la página de inicio">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo de la página" aria-label="Logo de la página">
             <div class="header__right-content">
-                <p id="challengeInfo" class="header__info"></p>
-                <img src="/images/persona.png" class="header__userLogo">
+                <p id="challengeInfo" class="header__info" aria-live="polite"></p>
+                <img src="/images/persona.png" class="header__userLogo" alt="Icono de usuario" aria-label="Icono de usuario">
             </div>
         </header>               
-        <main class="main-content">
-            <div id="quicksandOption" class="modal-container">
+        <main class="main-content" role="main">
+            <div id="quicksandOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la mejor decisión, enfrentarse a las viboras con un cuchillo:</p>
-                    <p class="win_points_notification">Gana +50pts</p>
-                    <button id="quicksandKnife" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +50pts</p>
+                    <button id="quicksandKnife" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
-            <div id="catusOption" class="modal-container">
+            <div id="catusOption" class="modal-container" role="dialog" aria-modal="true">
                 <div class="modal">
                     <h1 class="title_notificacion">Resultado</h1>
                     <p class="body_notification">Usted ha escogido la decisión que genera dudas, enfrentarse a las viboras con un bastón:</p>
-                    <p class="win_points_notification">Gana +25pts</p>
-                    <button id="catusStick" class="option__button option__button--text">Aceptar</button>
+                    <p class="win_points_notification" aria-live="polite">Gana +25pts</p>
+                    <button id="catusStick" class="option__button option__button--text" aria-label="Aceptar resultado">Aceptar</button>
                 </div>
             </div>
             <div class="challengeScreenContainer">
                 <div class="challengeScreenContainer__descriptionContainer">
-                    <p id="challengeDescription" class="challengeScreenContainer__description">El forastero te muestra dos opciones: un camino que atraviesa un denso bosque de cactus y otro que cruza un peligroso terreno de arena movediza. Tu elección determinará tu próximo desafío en este vasto y hostil desierto. ¿Qué camino tomarás?</p>
-                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer">
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/arenaMovediza.jpg"></img>
-                            <button id="quicksandButton" class="option__button option__button--text">Arena Movediza</button>
+                    <p id="challengeDescription" class="challengeScreenContainer__description" aria-live="polite">El forastero te muestra dos opciones: un camino que atraviesa un denso bosque de cactus y otro que cruza un peligroso terreno de arena movediza. Tu elección determinará tu próximo desafío en este vasto y hostil desierto. ¿Qué camino tomarás?</p>
+                    <div id="challengeOptions" class="challengeScreenContainer__optionsContainer" role="menu">
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/arenaMovediza.jpg" alt="Imagen del desierto" aria-label="Imagen del desierto">
+                            <button id="quicksandButton" class="option__button option__button--text" aria-label="Seleccionar la arena movediza como opción">Arena Movediza</button>
                         </div>
-                        <div class="optionsContainer__option">
-                            <img class="option__image" src="/images/scenarios/desert/bosqueCactus.jpg"></img>
-                            <button id="catusButton" class="option__button option__button--text">Cactus</button>
+                        <div class="optionsContainer__option" role="menuitem">
+                            <img class="option__image" src="/images/scenarios/desert/bosqueCactus.jpg" alt="Imagen del bosque de cactus" aria-label="Imagen del bosque de cactus">
+                            <button id="catusButton" class="option__button option__button--text" aria-label="Seleccionar el bosque de cactus como opción">Cactus</button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <img class="footer__leafImage1" src="/images/hoja1.png">
+        <footer class="footer" role="contentinfo">
+            <img class="footer__leafImage1" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
             <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
-            <img class="footer__leafImage" src="/images/hoja1.png">
+            <img class="footer__leafImage" src="/images/hoja1.png" alt="Imagen de una hoja" aria-label="Imagen de una hoja">
         </footer>
         <script src="/desert/step1.js"></script>
     </body>
