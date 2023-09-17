@@ -9,7 +9,6 @@ const jungleButton = document.getElementById('jungleButton')
 const modal_container = document.getElementById('modal_container')
 const close = document.getElementById('close')
 
-
 function onLoadDocument() {
     challengeInfo.innerHTML = info
 }
