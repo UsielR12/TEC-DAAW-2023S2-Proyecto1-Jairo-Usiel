@@ -184,6 +184,54 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+table {
+    border-collapse: collapse;
+    width: 35%;
+    margin: auto;
+    border: 3px solid #000; 
+}
+
+th, td {
+    font-family: 'Londrina Solid';
+    font-size:  20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 3px solid #000; 
+}
+
+th {
+    font-family: 'Londrina Solid';
+    font-size:  25px;
+    background-color: #0A3F28;
+    color: #FFFFFF;
+}
+
+.instruction__title {
+    font-family: 'Londrina Solid';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: -20px;
+}
+
+.instruction__description {
+    font-family: 'Londrina Solid';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0px 20px;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;

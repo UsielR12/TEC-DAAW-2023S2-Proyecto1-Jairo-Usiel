@@ -9,23 +9,12 @@ const jungleButton = document.getElementById('jungleButton')
 const modal_container = document.getElementById('modal_container')
 const close = document.getElementById('close')
 
-desertButton.addEventListener('click', () => {
-    modal_container.classList.add('show')
-});
-
-close.addEventListener('click', () => {
-    modal_container.classList.remove('show')
-    window.location.href = '/desert'
-});
-
-
 
 function onLoadDocument() {
     challengeInfo.innerHTML = info
 }
 
 function handleDesertOption() {
-    modal_container.classList.add('show')
     localStorage.setItem('scenario', 'desert')
     window.location.href = '/desert'
 }

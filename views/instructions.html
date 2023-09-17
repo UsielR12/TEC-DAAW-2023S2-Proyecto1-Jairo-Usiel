@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survival Trial</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="challenge.css">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
+        <link rel="shortcut icon" href="/images/LogoCuadrado.jpg" type="image/jpg">
+    </head>
+    <body>
+        <header class="header">
+            <a href="/" class="header__title">Inicio</a>
+            <img class="header__logo" src="/images/LogoLargo.png" alt="Logo">
+        </header>
+        <main class="main-content">
+            <div class="mainScreenContainer">
+                <p class="instruction__title">Instrucciones</p>
+                <p class="instruction__description">"Survival Trial" es un juego de rol en el que el jugador asume el papel de un valiente aventurero en un mundo lleno de peligros y desafíos. El objetivo del juego es avanzar a través de una serie de escenarios y tomar decisiones que afectarán la historia y los puntos del personaje, por cada decisión que tome puede ganar o perder puntos. El jugador comienza la ventura con 100pts y al final se hace una evaluación de los puntos obtenidos basados en la siguiente tabla:</p>
+                <table border="1">
+                    <tr>
+                        <th>Puntos</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>Menor a 100pts</td>
+                        <td>Pierde</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor o igual a 100pts y menor 200pts</td>
+                        <td>Logra sobrevivir</td>
+                    </tr>
+                    <tr>
+                        <td>Mayor o igual a 200pts</td>
+                        <td>Se corona como rey</td>
+                    </tr>
+                </table>
+                <button id="returnButton" class="mainScreenContainer__startButton mainScreenContainer__startButton--text">Volver</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <img class="footer__leafImage1" src="/images/hoja1.png"></img>
+            <text class="footer__authorRights">Derechos de autor © 2023. Jairo Calderón Solís - Usiel Ramírez González.</text>
+            <img class="footer__leafImage" src="/images/hoja1.png"></img>
+        </footer>
+        <script src="instructions.js"></script>
+    </body>
+</html>
